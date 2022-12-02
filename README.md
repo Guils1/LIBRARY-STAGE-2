@@ -3,10 +3,10 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 <p align="center">
-<img src="/admin/pages/log/images/teladelogin.jpg"/>
+<img src="/admin/pages/log/images/login.png"/>
 </p>
 <p align="center">
-<img src="/admin/pages/log/images/teladeinicio.jpg"/>
+<img src="/admin/pages/log/images/home.png"/>
 </p>
 
 ## Resumo do projeto
