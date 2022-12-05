@@ -4,7 +4,7 @@ namespace App\Session;
 
 require (__DIR__.'/../../vendor/autoload.php');
 
-use \App\Entity\Usuario;                                                  
+use \App\Models\Usuario;                                                  
 use \App\Session\Login;
 Login::requireLogout();
 
@@ -48,6 +48,7 @@ if(isset($_POST['acao'])) {
     }
 }
 
+include (__DIR__.'/../login/templates/head.php');
 include (__DIR__.'/../login/templates/header.php');
 include (__DIR__.'/../login/components/main.php');
 include __DIR__.'/../login/templates/footer.php';

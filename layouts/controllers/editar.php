@@ -4,7 +4,7 @@ require_once(__DIR__.'/../../vendor/autoload.php');
 
 define('TITLE','Editar livro');
 
-use \App\Entity\Book;
+use \App\Models\Book;
 
 //VALIDAÇÃO DO ID
 if(!isset($_GET['id']) or !is_numeric($_GET['id'])){
@@ -34,6 +34,7 @@ if(isset($_POST['nome'],$_POST['descricao'],$_POST['ativo'])){
   exit;
 }
 
+include (__DIR__.'/../index/templates/head.php');
 include (__DIR__.'/../index/templates/header.php');
 include (__DIR__.'/../index/components/formulario.php');
 include __DIR__.'/../index/templates/footer.php';

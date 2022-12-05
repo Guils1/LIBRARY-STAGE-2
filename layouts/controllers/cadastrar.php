@@ -4,7 +4,7 @@ require_once(__DIR__.'/../../vendor/autoload.php');
 
 define('TITLE','Cadastrar livro');
 
-use \App\Entity\Book;
+use \App\Models\Book;
 $obBook = new Book;
 
 //VALIDAÇÃO DO POST
@@ -21,6 +21,7 @@ if(isset($_POST['nome'],$_POST['descricao'],$_POST['data_lancamento'],$_POST['at
   header('location: ../../index?page=books&status=success');
 }
 
-include (__DIR__.'/../pages/header.php');
-include (__DIR__.'/../pages/formulario.php');
-include (__DIR__.'/../pages/footer.php');
+include (__DIR__.'/../index/templates/head.php');
+include (__DIR__.'/../index/templates/header.php');
+include (__DIR__.'/../index/components/formulario.php');
+include (__DIR__.'/../index/templates/footer.php');
