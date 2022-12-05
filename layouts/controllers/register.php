@@ -48,8 +48,8 @@ if(isset($_POST['acao'])) {
     }
 }
 
-include (__DIR__.'/../pages/header.php');
-include (__DIR__.'/../pages/log/main.php');
-include __DIR__.'/../pages/log/footer.php';
+include (__DIR__.'/../login/templates/header.php');
+include (__DIR__.'/../login/components/main.php');
+include __DIR__.'/../login/templates/footer.php';
 
 ?>

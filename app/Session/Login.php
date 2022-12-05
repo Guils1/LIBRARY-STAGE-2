@@ -28,7 +28,7 @@ class Login {
             'login' => $obUsuario->login,
         ];
 
-        header('location: ../../index.php');
+        header('location: ../../index');
     }
 
     public static function logout() {
@@ -36,7 +36,7 @@ class Login {
 
         unset($_SESSION['usuario']);
 
-        header('location: register.php');
+        header('location: register');
     }
 
     public static function isLogged() {
@@ -48,14 +48,14 @@ class Login {
 
     public static function requireLogin() {
         if(!self::isLogged()) {
-            header('location: admin/exec/register.php');
+            header('location: layouts/controllers/register');
             exit;
         }
     }
     
     public static function requireLogout() {
         if(self::isLogged()) {
-            header('location: index.php');
+            header('location: index');
         }
     }
     

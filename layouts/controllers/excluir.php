@@ -6,7 +6,7 @@ use \App\Entity\Book;
 
 //VALIDAÇÃO DO ID
 if(!isset($_GET['id']) or !is_numeric($_GET['id'])){
-  header('location: ../../index.php?status=error');
+  header('location: ../../index?status=error');
   exit;
 }
 
@@ -15,7 +15,7 @@ $obBook = Book::getBook($_GET['id']);
 
 //VALIDAÇÃO Do LIVRO
 if(!$obBook instanceof Book){
-  header('location: ../../index.php?status=error');
+  header('location: ../../index?status=error');
   exit;
 }
 
@@ -24,10 +24,10 @@ if(isset($_POST['excluir'])){
 
   $obBook->excluir();
 
-  header('location: ../../index.php?page=books&status=success');
+  header('location: ../../index?page=books&status=success');
   exit;
 }
 
-include (__DIR__.'/../pages/header.php');
-include (__DIR__.'/../pages/confirmar-exclusao.php');
-include __DIR__.'/../pages/footer.php';
+include (__DIR__.'/../index/templates/header.php');
+include (__DIR__.'/../index/components/confirmar-exclusao.php');
+include __DIR__.'/../index/templates/footer.php';

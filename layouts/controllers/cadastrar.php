@@ -18,7 +18,7 @@ if(isset($_POST['nome'],$_POST['descricao'],$_POST['data_lancamento'],$_POST['at
   $obBook->genres            = $_POST['genres'];
   $obBook->cadastrar();
 
-  header('location: ../../index.php?page=books&status=success');
+  header('location: ../../index?page=books&status=success');
 }
 
 include (__DIR__.'/../pages/header.php');

@@ -4,11 +4,11 @@
 
     $usuarioLogado = Login::getUserlogado();
 
-    $usuario = $usuarioLogado ? '<a class="dropdown-item" href="admin/exec/logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    $usuario = $usuarioLogado ? '<a class="dropdown-item" href="layouts/controllers/logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
     </svg> Sair</a>' :
-                '<a class="dropdown-item" href="../../index.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                '<a class="dropdown-item" href="../../index"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                 </svg> Entrar</a>'
@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Biblioteca </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="shortcut icon" href="admin/pages/log/images/online-library (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="layouts/pages/log/images/online-library (1).png" type="image/x-icon">
 </head>
 
 <body>
@@ -31,36 +31,36 @@
         <div class="row">
             <ul class="nav justify-content-center fixed-top">
                 <li>
-                    <a href="../../index.php">
-                        <img src="/admin/pages/log/images/library-card.png" alt="">
+                    <a href="../../index">
+                        <img src="/layouts/pages/log/images/library-card.png" alt="">
                     </a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link active" href="../../index.php?page=books">Todos os gêneros</a>
+                    <a class="nav-link active" href="../../index?page=books">Todos os gêneros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=aventura">Aventura</a>
+                    <a class="nav-link" href="../../index?genre=aventura">Aventura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=carta">Carta</a>
+                    <a class="nav-link" href="../../index?genre=carta">Carta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=conto">Conto</a>
+                    <a class="nav-link" href="../../index?genre=conto">Conto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=cronica">Crônica</a>
+                    <a class="nav-link" href="../../index?genre=cronica">Crônica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=drama">Drama</a>
+                    <a class="nav-link" href="../../index?genre=drama">Drama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=poesia">Poesia</a>
+                    <a class="nav-link" href="../../index?genre=poesia">Poesia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=romance">Romance</a>
+                    <a class="nav-link" href="../../index?genre=romance">Romance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.php?genre=terror">Terror</a>
+                    <a class="nav-link" href="../../index?genre=terror">Terror</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="icon-find" href="#" tabindex="-1" aria-disabled="true">
