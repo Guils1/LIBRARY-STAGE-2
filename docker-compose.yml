@@ -2,8 +2,7 @@ php:
   image: php:7.4-apache
   container_name: meu-php
   ports:
-    - "80:80"
-      
+    - "81:80"
   volumes:
     - /home/guilhermevalerio/Documentos/biblioteca-poo:/var/www/html
   links:
@@ -13,7 +12,7 @@ db:
   image: mysql:5.7
   container_name: meu-mysql
   ports:
-    - "3306:3306"
+    - "3307:3306"
   volumes:
     - var/lib/mysql
   environment:

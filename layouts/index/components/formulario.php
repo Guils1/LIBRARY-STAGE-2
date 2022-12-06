@@ -35,6 +35,7 @@
         <option value="" selected>---Gênero---</option>
         <option value="Aventura">Aventura</option>
         <option value="Carta">Carta</option>
+        <option value="Conto">Conto</option>
         <option value="Crônica">Crônica</option>
         <option value="Drama">Drama</option>
         <option value="Poesia">Poesia</option>

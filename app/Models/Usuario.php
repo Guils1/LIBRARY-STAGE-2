@@ -15,7 +15,7 @@ class Usuario {
 
     public $login;
 
-    protected $password;
+    public $password;
 
     public $data_nascimento;
 

@@ -29,14 +29,14 @@ class Login {
         ];
 
         header('location: ../../index');
+        exit();
     }
 
     public static function logout() {
         self::init();
 
-        unset($_SESSION['usuario']);
-
         header('location: register');
+        session_destroy();
     }
 
     public static function isLogged() {
@@ -56,6 +56,7 @@ class Login {
     public static function requireLogout() {
         if(self::isLogged()) {
             header('location: index');
+            exit();
         }
     }
     

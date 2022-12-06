@@ -21,7 +21,7 @@
                     <a class="nav-link" href="../../index?genre=Conto">Conto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=Cronica">Crônica</a>
+                    <a class="nav-link" href="../../index?genre=Crônica">Crônica</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../../index?genre=Drama">Drama</a>
