@@ -24,10 +24,11 @@ if(!$obBook instanceof Book){
 //VALIDAÇÃO DO POST
 if(isset($_POST['nome'],$_POST['descricao'],$_POST['ativo'])){
 
-  $obBook->nome    = $_POST['nome'];
-  $obBook->descricao = $_POST['descricao'];
-  $obBook->data_lancamento = $_POST['data_lancamento'];
-  $obBook->ativo     = $_POST['ativo'];
+  $obBook->nome             = $_POST['nome'];
+  $obBook->descricao        = $_POST['descricao'];
+  $obBook->data_lancamento  = $_POST['data_lancamento'];
+  $obBook->ativo            = $_POST['ativo'];
+  $obBook->img              = $_POST['img'];
   $obBook->atualizar();
 
   header('location: ../../index.php?page=books&status=success');

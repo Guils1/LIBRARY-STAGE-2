@@ -32,9 +32,14 @@
     <div class="form-group">
       <label>Gênero:</label>
       <select type="text" class="form-control mb-3" name="genres" value="<?=$obBook->genres?>">
-        <option value="" selected></option>
+        <option value="" selected>---Gênero---</option>
+        <option value="Aventura">Aventura</option>
+        <option value="Carta">Carta</option>
+        <option value="Crônica">Crônica</option>
         <option value="Drama">Drama</option>
-        <option value="Fantasia">Fantasia</option>
+        <option value="Poesia">Poesia</option>
+        <option value="Romance">Romance</option>
+        <option value="Terror">Terror</option>
       </select>
     </div>
 

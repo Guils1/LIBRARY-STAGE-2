@@ -15,7 +15,7 @@ if (isset($_GET['exec'])) {
 } elseif (isset($_GET['page'])) {
     include_once ('layouts/index/components/' . $_GET['page'] . '.php');
 } elseif (isset($_GET['genre'])) {
-    include_once ('layouts/pages/genres/' . $_GET['genre'] . '.php');
+    include_once ('layouts/index/components/genre.php');
 } else {
     include_once('layouts/index/components/main.php');
 }

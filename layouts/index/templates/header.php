@@ -5,35 +5,35 @@
             <ul class="nav justify-content-center fixed-top">
                 <li>
                     <a href="../../index">
-                        <img src="/layouts/pages/log/images/library-card.png" alt="">
+                        <img src="/layouts/resources/images/library-card.png" alt="">
                     </a>
                 </li> 
                 <li class="nav-item">
                     <a class="nav-link active" href="../../index?page=books">Todos os gêneros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=aventura">Aventura</a>
+                    <a class="nav-link" href="../../index?genre=Aventura">Aventura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=carta">Carta</a>
+                    <a class="nav-link" href="../../index?genre=Carta">Carta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=conto">Conto</a>
+                    <a class="nav-link" href="../../index?genre=Conto">Conto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=cronica">Crônica</a>
+                    <a class="nav-link" href="../../index?genre=Cronica">Crônica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=drama">Drama</a>
+                    <a class="nav-link" href="../../index?genre=Drama">Drama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=poesia">Poesia</a>
+                    <a class="nav-link" href="../../index?genre=Poesia">Poesia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=romance">Romance</a>
+                    <a class="nav-link" href="../../index?genre=Romance">Romance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index?genre=terror">Terror</a>
+                    <a class="nav-link" href="../../index?genre=Terror">Terror</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="icon-find" href="#" tabindex="-1" aria-disabled="true">

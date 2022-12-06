@@ -123,5 +123,4 @@ class Book{
     return (new Database('books'))->select('id = '.$id)
                                   ->fetchObject(self::class);
   }
-
 }
