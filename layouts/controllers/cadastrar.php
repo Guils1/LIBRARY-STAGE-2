@@ -20,6 +20,8 @@ if(isset($_POST['nome'],$_POST['descricao'],$_POST['data_lancamento'],$_POST['at
 
   header('location: ../../index?page=books&status=success');
   exit();
+} else {
+  header('location: ../layouts/controllers/error' );
 }
 
 include (__DIR__.'/../index/templates/head.php');

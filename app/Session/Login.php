@@ -10,6 +10,7 @@ class Login {
         }
     }
 
+
     public static function getUserlogado() {
 
         self::init();

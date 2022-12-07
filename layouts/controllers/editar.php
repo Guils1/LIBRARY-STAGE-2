@@ -33,6 +33,8 @@ if(isset($_POST['nome'],$_POST['descricao'],$_POST['ativo'])){
 
   header('location: ../../index.php?page=books&status=success');
   exit;
+} else {
+  header('location: ../layouts/controllers/error' );
 }
 
 include (__DIR__.'/../index/templates/head.php');

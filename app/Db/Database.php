@@ -2,6 +2,7 @@
 
 namespace App\Db;
 
+use App\Models\Usuario;
 use \PDO;
 use \PDOException;
 
@@ -11,25 +12,25 @@ class Database{
    * Host de conexão com o banco de dados
    * @var string
    */
-  const HOST = 'db';
+  protected string $HOST;
 
   /**
    * Nome do banco de dados
    * @var string
    */
-  const NAME = 'library';
+  protected string $NAME;
 
   /**
    * Usuário do banco
    * @var string
    */
-  const USER = 'root';
+  protected string $USER;
 
   /**
    * Senha de acesso ao banco de dados
    * @var string
    */
-  const PASS = '1234';
+  private string $PASS;
 
   /**
    * Nome da tabela a ser manipulada
@@ -48,6 +49,11 @@ class Database{
    * @param string $table
    */
   public function __construct($table = null){
+    $data = parse_ini_file(__DIR__.'/../../config.ini');
+    $this->USER= $data["user"];
+    $this->NAME = $data["name"];
+    $this->PASS = $data["pass"];
+    $this->HOST = $data["host"];
     $this->table = $table;
     $this->setConnection();
   }
@@ -57,10 +63,11 @@ class Database{
    */
   private function setConnection(){
     try{
-      $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME,self::USER,self::PASS);
+      $this->connection = new PDO('mysql:host='.$this->HOST.';dbname='.$this->NAME,$this->USER,$this->PASS);
       $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     }catch(PDOException $e){
-      die('ERROR: '.$e->getMessage());
+      // die('ERROR: '.$e->getMessage());
+      header('location: ../layouts/controllers/error');
     }
   }
 
@@ -76,7 +83,8 @@ class Database{
       $statement->execute($params);
       return $statement;
     }catch(PDOException $e){
-      die('ERROR: '.$e->getMessage());
+      // die('ERROR: '.$e->getMessage());
+      header('location: ../layouts/controllers/error');
     }
   }
 

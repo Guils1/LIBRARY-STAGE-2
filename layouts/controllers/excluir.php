@@ -15,7 +15,7 @@ $obBook = Book::getBook($_GET['id']);
 
 //VALIDAÇÃO Do LIVRO
 if(!$obBook instanceof Book){
-  header('location: ../../index?status=error');
+  header('location: location: ../layouts/controllers/error?status=error');
   exit;
 }
 
